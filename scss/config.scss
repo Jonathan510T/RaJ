@@ -1,0 +1,22 @@
+//Variables
+$website-width: 1280px;
+$main-color: red;
+$light-color: #f4f4f4;
+$medium-color: deepskyblue;
+$dark-color: #333;
+$bg-image: url("/dist/img/image.jpg");
+$inner-image: url("/dist/img/red-and-blue-bandanas.jpg");
+$x-image: url("/dist/img/34-342069_off-brand-logo-white-wallpaper-off-white-wallpaper.jpg");
+$c-image: url("/dist/img/621ebcab83d7edb777c6cc204af798d1.jpg");
+$d-image: url("/dist/img/crenshaw.PNG");
+$secondary-color: purple;
+
+//Set Text Color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

@@ -1,0 +1,315 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: red; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: deepskyblue; }
+
+.bg-main {
+  background: red;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: deepskyblue;
+  color: #fff; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  text-decoration: underline; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: red;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%;
+  border-radius: 50%; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    text-emphasis: 1rem;
+    font-weight: bolder;
+    text-shadow: 5px 5px 3px black;
+    font-size: larger; }
+    #main-nav a:hover {
+      border-color: deepskyblue; }
+    #main-nav a.current {
+      border-color: red; }
+
+#inner-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #inner-nav ul {
+    display: flex; }
+  #inner-nav li {
+    padding: 1rem 1.5rem; }
+  #inner-nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    text-emphasis: 1rem;
+    font-weight: bolder;
+    text-shadow: 5px 5px 3px black;
+    font-size: larger; }
+    #inner-nav a:hover {
+      border-color: purple; }
+    #inner-nav a.current {
+      border-color: #f4f4f4; }
+
+#header-home {
+  background: url("/dist/img/image.jpg") no-repeat center right/cover;
+  height: 100vh;
+  opacity: 2rem; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+    #header-home .header-content h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+      text-shadow: 2px 2px 1px #f4f4f4; }
+    #header-home .header-content p {
+      text-shadow: 1px 1px white; }
+
+#header-inner {
+  background: url("/dist/img/red-and-blue-bandanas.jpg") no-repeat 100% 100%/cover;
+  height: 10rem;
+  border-bottom: 3px solid #333; }
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 2fr); }
+  #home-a .specials .fas {
+    color: red;
+    padding-bottom: 0.4rem; }
+
+#about .bio-image {
+  grid-area: bioimage; }
+
+#about .bio {
+  grid-area: bio;
+  border-left: 3px solid red;
+  border-right: 3px solid deepskyblue;
+  padding: 0.8rem; }
+
+#about-a {
+  background: lavender;
+  font-size: 20px; }
+  #about-a .about-info {
+    display: grid;
+    grid-template-areas: "bioimage bio";
+    grid-gap: 1.2rem;
+    height: 50vh; }
+  #about-a .bio-image {
+    grid-area: bioimage; }
+  #about-a img {
+    border-radius: 10px; }
+  #about-a .bio {
+    grid-area: bio;
+    border-left: 3px solid red;
+    padding: 0.8rem;
+    border-right: 3px solid deepskyblue; }
+
+#about-b {
+  background: honeydew;
+  font-size: 17px; }
+  #about-b .about-info {
+    display: grid;
+    grid-template-areas: "bio bioimage";
+    height: 50vh; }
+  #about-b .bio-image {
+    grid-area: bioimage; }
+  #about-b img {
+    border-radius: 10px;
+    width: 525px;
+    height: 300px; }
+  #about-b .bio {
+    grid-area: bio;
+    border-left: 3px solid deepskyblue;
+    padding: 0.8rem;
+    width: 37rem;
+    border-right: 3px solid red; }
+
+#about-c {
+  background: url("/dist/img/621ebcab83d7edb777c6cc204af798d1.jpg") no-repeat center right/cover;
+  height: 100vh;
+  font-size: 16px; }
+  #about-c h2 {
+    color: #f4f4f4; }
+  #about-c .lead {
+    color: deepskyblue;
+    font-weight: bolder; }
+  #about-c .about-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    height: 50vh; }
+  #about-c img {
+    border-radius: 10px;
+    margin-left: 18rem; }
+  #about-c .bio {
+    border-radius: 10px;
+    border-left: 3px solid deepskyblue;
+    padding: 0.8rem;
+    width: 35rem;
+    height: 22rem;
+    border-right: 3px solid red;
+    border-top: 3px solid deepskyblue;
+    border-bottom: 3px solid red; }
+  #about-c .bio1 {
+    border-radius: 10px;
+    border-left: 3px solid deepskyblue;
+    padding: 0.8rem;
+    width: 35rem;
+    height: 22rem;
+    border-right: 3px solid red;
+    border-top: 3px solid deepskyblue;
+    border-bottom: 3px solid red;
+    margin-left: 30px; }
+  #about-c .vids {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; }
+
+#about-d {
+  background: url("/dist/img/crenshaw.PNG") no-repeat center right/cover;
+  font-size: 20px; }
+  #about-d .bottom-line {
+    background: blue; }
+  #about-d .lead {
+    color: red; }
+  #about-d .about-info {
+    display: flex;
+    justify-content: center;
+    height: 75vh; }
+  #about-d .bio {
+    border-left: 3px solid purple;
+    padding: 1.5rem;
+    width: 37rem;
+    height: 500px;
+    border-right: 3px solid purple; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+  height: 7vh; }
